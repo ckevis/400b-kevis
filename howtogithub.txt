@@ -7,3 +7,6 @@ git push
 
 Moving files to a different directory from the source directory:
 mv ** directory
+
+Cloning a repository to nimoy to create directories
+git clone repo_URL
