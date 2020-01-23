@@ -1,0 +1,9 @@
+This is where I am going to store the commands that I will be using frequently throughout the semester
+
+Adding file from terminal to my github account:
+git add **
+git commit -m "description"
+git push
+
+Moving files to a different directory from the source directory:
+mv ** directory
