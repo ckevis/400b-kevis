@@ -10,3 +10,7 @@ mv ** directory
 
 Cloning a repository to nimoy to create directories
 git clone repo_URL
+
+Updating a directory if files are added to the repository:
+go to current version of repository
+git pull
