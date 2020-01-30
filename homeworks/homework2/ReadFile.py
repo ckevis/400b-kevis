@@ -65,4 +65,3 @@ print(p)
 print(i[1])
 #checking the particle type. This will print the type as defined by the data
 print(i['type'][1])
-
