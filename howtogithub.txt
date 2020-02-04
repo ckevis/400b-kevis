@@ -14,3 +14,8 @@ git clone repo_URL
 Updating a directory if files are added to the repository:
 go to current version of repository
 git pull
+
+Downloading a file from a repository
+go to where you want the file downloaded
+sftp username
+get **
