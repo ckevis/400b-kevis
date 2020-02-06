@@ -118,3 +118,4 @@ localtot = localHalo + localDisk + localBulge
 flocbar = np.around((localDisk + localBulge)/localtot,3)
 print (localHalo, localDisk, localBulge, localtot,flocbar)
 
+ 
