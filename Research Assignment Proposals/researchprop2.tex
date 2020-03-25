@@ -1,0 +1,65 @@
+
+\documentclass{aastex63}
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand\aastex{AAS\TeX}
+\newcommand\latex{La\TeX}
+
+
+
+\graphicspath{{./}{figures/}}
+
+
+\begin{document}
+
+\title{Determining the Interactions of Stars at the Sun's distance from the Center of the Galaxy during a Galaxy Merger}
+
+\author{Charlotte Kevis}
+
+\section{Introduction} \label{sec:intro}
+The Milky Way and the Andromeda Galaxy (M31) are on a collision course that will cause them to merge in ~5.8 billion years \citep{VDM12}. Both galaxies have very notable satellite galaxies; the Milky Way has the Large and Small Magellanic Clouds and M31 has the Triangulum Galaxy (M33). In this project I will be simulating the conditions of stars located 30kpc from the center of M33, the same distance between the Sun and the center of the Milky Way \citep{Branham17}.
+
+Currently, the Milky Way and M31 are ~780 kpc away from each other. Their masses are approximately the same, with M31 being slightly larger. A 2019 report by \cite{Schiavi19} indicated that the relative radial velocity between M31 and the Milky Way is ~-120 km/s, with a transverse velocity varying from 17-150 km/s, with an average tentatively set at 50 km/s \citep{Schiavi19}. However, since it has been simulated that the two large galaxies will approach for the first time in ~0.9Gyr, with a projected merge at ~5.8Gyr, it is likely that the transverse velocity is much smaller \citep{VDM12}. This suggests that the Milky Way and M31 are on a more or less head on collision. 
+
+When two galaxies collide, their stars are moved from their orbit through tidal forces. The Sun will most likely be moved away from its current position towards the outskirts of the galaxy, even up to 50 kpc from the center of the Milky Way-Andromeda merger remnant \citep{VDM12}. In M33, stars at 30kpc from the center of the galaxy have a large chance of being ejected from the system or ending up within the larger merger. The satellite galaxy is most likely to fall into a decaying orbit around the Milky Way-Andromeda merger remnant. However, there is a chance that the whole galaxy will be ejected from the system through tidal forces. There is also a small chance that M33 will merge with M31 before the merger happens \citep{VDM12}. 
+
+M33 is projected to be on its second close approach to M31 at the time of the first close encounter between the Milky Way and M31 \citep{VDM12}. This could cause major tidal disruption to the dwarf galaxy, changing its shape and velocity. This could potentially lead to M33 merging with either larger galaxy or be ejected from the Local Group.
+
+The tidal effects on M33 by M31 have resulted in an abnormal dwarf galaxy. M33 features a warped disk and a very large halo, with masses projected to be ~50x that of the visible mass \citep{Corbelli03}. The galaxy pair also have tidal streams created by tidal stripping. Since M31 is much larger than M33, it has a great tidal effect. When M33 approaches, M31 can pull stars away from it. This is a visible phenomenon, as seen in the gas bridge between the two galaxies. However, the effect of the tidal stripping on M33 can be seen in the Triangulum Stream, a gas stream that extends from M33 as it moves towards M31. We can see these streams in this simulation by \cite{TG2020}
+
+\includegraphics{figure1.JPG}
+
+In this simulation the gas disk of M33 is heavily affected by tidal stripping, producing these streams away from the galactic center. This information indicates that M33 is approaching M31 for (potentially) the second time \citep{TG2020}. This could indicate a potential large mass loss before the M31-Milky Way merging event. This would impact the location and velocity of M33, and would affect its position at the time of the merger. 
+
+A star at the Sun's location in M33 during this time period could likely get sucked into M31 through this close approach. If the Sun-analogue stays in M33, it will likely move farther from the center of the galaxy. If the orbit of our Sun-analogue falls within this stream of gas, its orbit would be affected, causing diversions and a possible ejection from the system entirely. This simulation shows a variety of fates for our Sun-analogue, and this project will focus on which one is most likely.
+
+Determining the fate of this analogue could better the understanding of satellite galaxies around merging large galaxies. Since our galaxy cluster is a typical cluster, with massive galaxies that have many smaller satellites, simulating the properties of our Local Group will help us understand the evolution of other galaxy systems that are farther along in this same process.
+
+\section{Proposal}
+This project will be addressing the following questions:
+
+\begin{enumerate}
+ \item Where is the Sun-analogue located within the disk of M33 at current time?
+ \item How will the tidal streams affect the orbit of this analogue, if at all?
+ \item What is the likelihood of the analogue to be ejected from M33? Ejection could be either an ejection from the entire system (M31/M33) or an ejection and merge with M31.
+ \item Will the analogue be ejected from the system before or after the merger between M31 and the Milky Way?
+\end{enumerate}
+
+In order to answer these questions, I will need to simulate the current motions of M33 and determine what would happen to a particle orbiting at 30kpc from the center. Modifying previous codes, I can determine the trajectory and velocity of the particle over time. Using that, I will graph the position of the particle over a period of time that would include several orbits in order to determine how the position and velocity changes. These changes will determine if the particle is moving away from the galactic center and possibly leaving the system. I can use my understanding of the period to determine if or when the particle will be ejected, and compare it to the time frame it will take for M31 and the Milky Way will begin interacting.
+
+In order to do this, I will be modifying the code used to produce this graph 
+
+\includegraphics{figure2.JPG}
+
+with the difference being that it would be for a specific particle in M33 and the outer disk of M31. Based on current research, I believe that the Sun-analogue will likely be ejected at some point during the merger. The second likely possibility is that it will be tidally stripped and merge with M31, but starting the simulation to start now, that process could take up until the merger between M31 and the Milky Way.
+
+Since there are many different possibilities for the outcome of this analogue, I will be repeating the simulation for different stars located within a 30kpc disk around the center of the galaxy. To account for any variabilities in the Sun's orbit, I will also be choosing stars that are within a range of 1kpc from this 30kpc mark. So the particles I will be selecting to make these simulations will be within 29.5-30.5kpc from the center of M33. By determining the evolution of these stars orbits as the three galaxies interact, I will be able to determine the more likely outcome for the Sun-analogue.
+
+
+\bibliography{research}{}
+\bibliographystyle{aasjournal}
+
+
+
+\end{document}
+
