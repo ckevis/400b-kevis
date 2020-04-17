@@ -1,0 +1,77 @@
+
+\documentclass{aastex63}
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand\aastex{AAS\TeX}
+\newcommand\latex{La\TeX}
+
+
+
+\graphicspath{{./}{figures/}}
+
+\received{March 24th, 2020}
+\revised{\today}
+
+\begin{document}
+
+\title{Determining the Interactions of Stars at the Sun's distance from the Center of the Galaxy during a Galaxy Merger}
+
+\author{Charlotte Kevis}
+
+\keywords{Local Group, Tidal Stripping, Merger Remnant, Galaxy Interaction, Tidal Tails, Satellite Galaxy}
+
+\section{Introduction} 
+The Local Group, a system of nearby galaxies and their satellites, is home to two large galaxies called the Milky Way and Andromeda (M31), which are on a collision course that will cause them to merge in ~5.8 billion years \citep{VDM2012}. Both galaxies have very notable satellite galaxies; the Milky Way has the Large and Small Magellanic Clouds and M31 has the Triangulum Galaxy (M33). Currently, the Milky Way and M31 are ~780 kpc away from each other. Their masses are approximately the same, with M31 being slightly larger. It has been simulated that the two large galaxies will approach for the first time in ~0.9Gyr, with a projected merge at ~5.8Gyr, resulting in a large merger remnant that will contain all of the stars that have not been ejected from the system during the merger \citep{VDM2012}. This suggests that the Milky Way and M31 are on a more or less head on collision. When two galaxies collide, their stars are moved from their orbit through tidal forces. In M33, stars have a large chance of being ejected from the system or ending up within the larger merger. By simulating the evolution of the orbits of stars in M33's disk, we can determine the most likely fate of the satellite. Stars that are 8kpc from the center of M33, a similar distance between the Sun and the center of the Milky Way, are likely candidates to show how the galaxy will evolve. They are relatively far from the center but still close enough to be in relatively bound orbits. We will simulate how the orbits of these solar analogues evolve over time as tidal stripping from M31 and ejection from the eventual merger occur.
+
+Determining the fate of solar analogues in M33's disk could better the understanding of how stars are redistributed in satellites of two merging galaxies, with galaxies here referring to a large structure of stars centered on a black hole, while satellites are smaller structures that may or may not have a black hole, but are orbiting said galaxies. This will impact the distribution of materials and the metallicity of the merger. Consequently, the future of the merger remnant depends on this redistribution. Star forming regions, rich in metals, would be distributed across the galaxy instead of being concentrated in the center, resulting in wide spread star formation. Knowing how metallicity and dust is distributed and redistributed through galaxy interactions will improve our understanding of galactic evolution. 
+
+Currently, there are many different simulations on the fates of stars in M33 before and during the merger. The satellite galaxy is most likely to fall into a decaying orbit around the Milky Way-Andromeda merger remnant. M33 is projected to be on its second close approach to M31 at the time of the first close encounter between the Milky Way and M31 \citep{VDM2012}. This could cause major tidal disruption to the dwarf galaxy, changing its shape and velocity. This could potentially lead to M33 merging with either galaxy or be ejected from the Local Group. There is also a small chance that M33 will merge with M31 before the merger happens \citep{VDM2012}. Currently, tidal effects on M33 by M31 have resulted in M33 having a warped disk and a very large halo, with masses projected to be ~50x that of the visible mass \citep{Corbel03}. The galaxy pair also have tidal streams created by tidal stripping. Since M31 is much larger than M33, it has a great tidal effect. When M33 approaches, M31 can pull stars away from it. This is a visible phenomenon, as seen in the gas clouds between the two galaxies \cite{TG20}. This tidal stripping will greatly affect M33 before the merger, so in order to understand what will happen, we must simulate stars' orbit throughout time to see what is the most likely fate of M33. 
+
+\begin{figure}[ht!]
+\includegraphics{figure1.eps}
+\caption{A simulation of the gas clouds bridging between M31 and M33. This is evidence of past tidal stripping events as the two galaxies interacted, and we will likely see similar stripping between two merging galaxies like the Milky Way and M31 as they approach one another. Simulation by \cite{TG20}}
+\end{figure}
+
+What we will be determining is what force is more likely to affect the solar analogues in M33. There is a chance that M33 will be swallowed by M31 through tidal stripping before the merger occurs. There's also a chance that M33 will be swallowed into the merger. There's also a chance of M33 getting ejected from the Local Group or ending up in orbit around the merger remnant. We are unsure of the most likely outcome, but simulations give a much better understanding of what the fate of M33 and similar galaxies will be.
+
+\section{This Project}
+In this paper, we will be simulating how the orbits of stars in M33 will evolve over time by taking a ring of stars 8kpc from the center of M33 and simulating how their orbits change. I can determine the trajectory of these stars based on their current position and velocity, and by factoring tidal forces, I can simulate how these orbits will warp over time. The changes in the orbits will determine if the sun analogues are moving away from the center of M33 and possibly leaving the system, or if they are being brought into a different system and starting an orbit in a different direction. This can be determined using plots of the positions of the solar analogues over time. We will also calculate the difference in position between the analogues and the outer edge of M33 over time. If the graph increases exponentially over time with no sign of a downturn, then those stars can be considered ejected.
+
+This simulation will determine the most likely outcome of the solar analogues in M33. We will do this by simulating the orbits of the solar analogues over time.
+
+The best way to determine the accuracy of an experiment is through repetition. In doing this simulation, if my results are similar to previous simulations, then it is much more likely that the solutions we find will accurately predict the fate of M33. Determining how the orbits of satellite galaxies evolve through a merger of the galaxy it is orbiting and another large galaxy will give better understanding of how galaxies evolve. We may find similar systems in the future that are more evolved and through simulating the evolution of our own Local Group, for which we have more data on than a distant system, we can determine what happened in those farther systems. It will also help us determine how orbits get distributed due to tidal forces and the changes that happen due to galactic interactions.
+
+\section{Methodology)}
+In this paper, we will be simulating the positions of the solar analogues over time. By plotting the positions and then using their current velocity and taking into account the gravitational force from surrounding galaxies we can plot how the position of each solar analogue changes over time. This information can then be used to create a graph that determines the change in distance between the center of M33 and the analogues. The plot of this difference over time will tell us how far the stars are moving from the galaxy, and potentially if they are unbound. To do this, we will be using an N-body simulation. This kind of simulation takes into account multiple data points or "bodies" and calculates how they move based on the forces excerted by all other bodies. In this case, the bodies are the solar analogue, and the force being excerted on them is by each other and the tidal forces of M31.
+
+In the figure below, we have a plot of the position of the solar analogues on the xz plane, with each analogue being represented by a dot. This was data taken at time t=0, which is current time. This plot can be manipulated to show how the stars move over time on different planes. We can use this information to determine if and when the stars become unbound or are tidally stripped. To determine if the stars are truly unbound, we need to determine how their position changes with respect to the center of M33 over time. If the stars start to come back towards the galaxy, that indicates that the galactic interaction resulted in a largely oblong orbit, in which the analogue spends much of its time far from the center. Otherwise, if there is no indication of a return, the star can be considered to be ejected from the system.
+
+\begin{figure}
+    \includegraphics{figure2.eps}
+    \caption{The positions of the solar analogues on the xz plane in M33 at time t=0. We will be creating multiple similar plots to show the orbits on different planes at different times to get an accurate picture of the evolution of the orbits.}
+\end{figure}
+
+To make this simulation, we will be using the following equations:
+\begin{enumerate}
+    \item To determine the center of mass of M33 in order to differentiate the solar analogues at 8kpc from the rest of the stars, we use the equation $\sum_{n=1}^{k}m*x / \sum_{n=1}^{k}m$, where m is the mass of a particle and x is its position from a reference point.
+    \item The Hernquist Profile Equation, $\rho (r) = M_{halo}/(2\pi) a/r(r+a)^{3}$, where r is the distance of a star from the center of the galaxy, M is the total mass of the dark matter halo, and a is the scale radius.
+\end{enumerate}
+These calculations will be used to determine the change in the orbit over time.
+
+I will need to make the following plots to answer my question
+\begin{enumerate}
+    \item Plots of the solar analogues at a time t=0 on the xy, xz, and yz planes.
+    \item Multiple plots of the solar analogues on the same planes, but at time incriments of 0.5 Gyr in order to determine how the stars move in their orbit.
+    \item A plot of the average change in position between the solar analogues and the center of mass of M33. This may be accomplished using multiple plots of specific analogues and combining the plots to create an average.
+\end{enumerate}
+Using these plots, we will be able to determine whether or not the stars become unbound, and where they are likely to end up based on their trajectory.
+
+I predict that the most likely outcome will be that M33 ends up in orbit around the merger remnant in the future since this is what previous simulations have suggested. However, the mass of the satellite will likely be much lighter due to tidal stripping, which may eject a large portion of the solar analogues from orbit around M33. Likely, many of those analogues will be ejected during the merger, where they will be tidally pulled into the merger, with some being ejected from M33 by tidal stripping due to M31.
+
+\bibliography{research4}{}
+\bibliographystyle{aasjournal}
+
+
+
+\end{document}
+
